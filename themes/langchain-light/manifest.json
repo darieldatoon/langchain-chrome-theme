@@ -1,0 +1,81 @@
+{
+  "manifest_version": 3,
+  "name": "LangChain Light",
+  "version": "0.1.0",
+  "description": "LangChain Light: Chrome colors from LangChain's Macaw design system.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [
+        245,
+        248,
+        251
+      ],
+      "frame_inactive": [
+        255,
+        255,
+        255
+      ],
+      "toolbar": [
+        255,
+        255,
+        255
+      ],
+      "toolbar_text": [
+        15,
+        23,
+        42
+      ],
+      "toolbar_button_icon": [
+        51,
+        65,
+        85
+      ],
+      "tab_text": [
+        15,
+        23,
+        42
+      ],
+      "tab_background_text": [
+        71,
+        85,
+        105
+      ],
+      "bookmark_text": [
+        51,
+        65,
+        85
+      ],
+      "omnibox_background": [
+        237,
+        242,
+        247
+      ],
+      "omnibox_text": [
+        15,
+        23,
+        42
+      ],
+      "ntp_background": [
+        255,
+        255,
+        255
+      ],
+      "ntp_text": [
+        15,
+        23,
+        42
+      ],
+      "ntp_link": [
+        20,
+        80,
+        149
+      ]
+    }
+  }
+}

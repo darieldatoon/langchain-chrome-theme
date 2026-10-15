@@ -1,0 +1,89 @@
+{
+  "manifest_version": 3,
+  "name": "LangChain Dark",
+  "version": "0.1.0",
+  "description": "LangChain Dark: Chrome colors from LangChain's Macaw design system.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [
+        17,
+        21,
+        33
+      ],
+      "frame_inactive": [
+        9,
+        9,
+        15
+      ],
+      "toolbar": [
+        9,
+        9,
+        15
+      ],
+      "toolbar_text": [
+        245,
+        248,
+        251
+      ],
+      "toolbar_button_icon": [
+        226,
+        232,
+        240
+      ],
+      "tab_text": [
+        245,
+        248,
+        251
+      ],
+      "tab_background_text": [
+        203,
+        213,
+        225
+      ],
+      "bookmark_text": [
+        226,
+        232,
+        240
+      ],
+      "omnibox_background": [
+        27,
+        32,
+        48
+      ],
+      "omnibox_text": [
+        245,
+        248,
+        251
+      ],
+      "ntp_background": [
+        9,
+        9,
+        15
+      ],
+      "ntp_text": [
+        245,
+        248,
+        251
+      ],
+      "ntp_link": [
+        0,
+        141,
+        255
+      ]
+    },
+    "images": {
+      "theme_ntp_background": "images/ntp.png"
+    },
+    "properties": {
+      "ntp_background_alignment": "center",
+      "ntp_background_repeat": "no-repeat",
+      "ntp_logo_alternate": 1
+    }
+  }
+}

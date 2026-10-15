@@ -1,0 +1,49 @@
+# The only prerequisite is mise: `mise trust && mise install && mise run setup`.
+
+[tools]
+node = "24"
+pnpm = "12"
+lefthook = "2"
+"github:SocketDev/sfw-free" = { version = "1.15.2", bin = "sfw" }
+
+[settings]
+lockfile = true
+# CI runs on Linux; `mise install --locked` fails for platforms missing here.
+lockfile_platforms = ["linux-x64", "linux-arm64", "macos-arm64", "macos-x64"]
+
+[tasks.setup]
+description = "Install dependencies through Socket Firewall, then git hooks"
+run = ["sfw pnpm install --frozen-lockfile", "lefthook install"]
+
+[tasks.generate]
+description = "Rewrite themes/*/manifest.json from the installed @langchain/macaw-tokens"
+run = "node src/generate.ts"
+
+[tasks.images]
+description = "Re-render themes/*/icons and images (New Tab background) with Playwright"
+run = ["pnpm exec playwright install chromium", "node scripts/render-images.ts"]
+
+[tasks.check]
+description = "Format check, lint, type check, and fail if a manifest is stale"
+run = [
+  "pnpm exec oxfmt --check .",
+  "pnpm exec oxlint",
+  "pnpm exec tsc",
+  "node src/generate.ts --check",
+]
+
+[tasks.test]
+description = "Unit and contrast tests"
+run = "pnpm exec vitest run"
+
+[tasks.package]
+description = "Zip each theme into dist/ for the Chrome Web Store or a GitHub release"
+run = "node scripts/package.ts"
+
+[tasks.release]
+description = "Bump the version (patch, minor or major), commit and tag it; push the tag to publish"
+run = 'npm version -m "chore: release v%s"'
+
+[tasks.screenshots]
+description = "Capture docs/images/new-tab-dark.png from Chromium with the theme loaded"
+run = ["pnpm exec playwright install chromium", "node scripts/screenshots.ts"]
