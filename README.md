@@ -1,6 +1,6 @@
 # LangChain Theme for Google Chrome
 
-Light and dark Chrome themes generated from [Macaw](https://github.com/langchain-ai/macaw-design-system), LangChain's design system. The companion to [LangChain Theme for VS Code](https://github.com/darieldatoon/langchain-vscode-theme).
+Light and dark Chrome themes generated from [Macaw](https://github.com/langchain-ai/macaw-design-system), LangChain's design system.
 
 ![LangChain Dark New Tab page: the Macaw brand gradient with a faint LangChain logomark](docs/images/new-tab-dark.png)
 
