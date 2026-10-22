@@ -5,7 +5,7 @@ pre-commit:
     format:
       glob: '*.{ts,json,yaml,yml,md,toml}'
       exclude: ['themes/**']
-      run: pnpm exec oxfmt --check {staged_files}
+      run: pnpm exec oxfmt --check --no-error-on-unmatched-pattern {staged_files}
     lint:
       glob: '*.ts'
       run: pnpm exec oxlint {staged_files}
