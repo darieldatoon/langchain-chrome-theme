@@ -167,7 +167,7 @@ importers:
   .:
     devDependencies:
       '@langchain/macaw-tokens':
-        specifier: 1.0.0-beta.8
+        specifier: 1.0.0
         version: 1.0.0-beta.8
       '@types/node':
         specifier: ^24.19.2
