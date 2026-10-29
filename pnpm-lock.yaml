@@ -167,8 +167,8 @@ importers:
   .:
     devDependencies:
       '@langchain/macaw-tokens':
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 1.1.1
+        version: 1.1.1
       '@types/node':
         specifier: ^26.6.5
         version: 26.6.5
@@ -200,8 +200,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@langchain/macaw-tokens@1.0.0':
-    resolution: {integrity: sha512-ek2+C24aSwnjAYQvLSNOtCzWpJLL1wC4PfMM4jJdEcYwB/vYRd76IvnpDR191jMEcaLpGKcW2s0nHS0mnlp64Q==}
+  '@langchain/macaw-tokens@1.1.1':
+    resolution: {integrity: sha512-EhIo5ZG1H6XyWqqoL+nB0fOPbAWspvjKKYPVES3pAbapePa3Tg4Vb2WecPnz+qANLbPiY03rjBrbiS1MqGfGBg==}
     engines: {node: '>=26'}
 
   '@oxc-project/types@0.154.0':
@@ -884,7 +884,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@langchain/macaw-tokens@1.0.0': {}
+  '@langchain/macaw-tokens@1.1.1': {}
 
   '@oxc-project/types@0.154.0': {}
 
